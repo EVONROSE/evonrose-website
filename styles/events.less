@@ -157,3 +157,143 @@
     text-align: center;
   }
 }
+
+
+/* =========================================
+   EVON ROSE — Event Detail Page
+   ========================================= */
+
+.collection-type-events .er-event-item {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 0 80px;
+}
+
+.er-back-link {
+  display: inline-block;
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.40) !important;
+  text-decoration: none !important;
+  margin-bottom: 40px;
+  transition: color 0.2s ease;
+}
+
+.er-back-link:hover {
+  color: #E84E35 !important;
+}
+
+.er-event-item-title {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 20px;
+  line-height: 1.15;
+}
+
+.er-event-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.er-event-item-date,
+.er-event-item-time {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #E84E35;
+}
+
+.er-event-item-dot {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.er-event-item-location {
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.er-event-item-venue {
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.er-event-item-address {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.40);
+  letter-spacing: 0.5px;
+}
+
+.er-ticket-btn--large {
+  display: inline-block;
+  padding: 14px 32px;
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  margin-bottom: 48px;
+}
+
+.er-event-item-body {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 60px;
+}
+
+.er-event-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  gap: 20px;
+}
+
+.er-event-nav-link {
+  font-family: "Raleway", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.40) !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+}
+
+.er-event-nav-link:hover {
+  color: #E84E35 !important;
+}
+
+.er-event-nav-link--next {
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .er-event-item-title {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .er-event-nav {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .er-event-nav-link--next {
+    margin-left: 0;
+  }
+}
