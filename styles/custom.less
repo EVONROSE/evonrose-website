@@ -1,0 +1,66 @@
+/* =========================================
+   EVON ROSE — Custom CSS
+   ========================================= */
+
+/* ---- SPACER BLOCKS: Cap height to remove excessive gaps ---- */
+.sqs-block-spacer {
+  max-height: 50px !important;
+  overflow: hidden;
+}
+
+/* ---- PRE-FOOTER: Force dark background (override CMS block image) ---- */
+#preFooter,
+#preFooter .pre-footer-inner,
+.collection-thunderrumbling-1 #preFooter {
+  background-color: #111111 !important;
+  background-image: none !important;
+}
+
+/* ---- BODY TEXT: Better readability on dark background ---- */
+.sqs-block-html p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+.sqs-block-html p em,
+.sqs-block-html p i {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* ---- NEWSLETTER: Tighter, cleaner ---- */
+.newsletter-block .newsletter-form-wrapper {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.newsletter-block .newsletter-form-header-title {
+  letter-spacing: 1.5px;
+}
+
+/* ---- BUTTONS: Tighter letter-spacing, consistent size ---- */
+.sqs-block-button-element--medium,
+.sqs-block-button-element--large,
+.sqs-block-button-element--small {
+  letter-spacing: 2px !important;
+  font-size: 11px !important;
+}
+
+/* ---- PAGE TITLE: Hide default h1 on pages where not needed ---- */
+.show-page-title .desc-wrapper h1.page-title,
+.show-page-title .item-meta h1.page-title {
+  display: none;
+}
+
+/* ---- SECTION ROWS: Slightly tighter spacing ---- */
+.sqs-layout > .sqs-row {
+  margin-bottom: 0;
+}
+
+/* ---- MOBILE ---- */
+@media only screen and (max-width: 640px) {
+  .sqs-block-spacer {
+    max-height: 30px !important;
+  }
+}
