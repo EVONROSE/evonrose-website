@@ -1,7 +1,7 @@
 <div class="er-events-list" data-collection-id="{collection.id}">
 
   <div class="er-events-table">
-    {.repeated section items}
+    {.repeated section upcoming}
     <div class="er-event-row" id="event-{id}">
 
       <div class="er-event-date">
@@ -27,12 +27,5 @@
     </div>
     {.end}
   </div>
-
-  {.if pagination}
-  <nav class="pagination clear" data-paginate="scroll">
-    {.if pagination.prevPage}<div class="newer"><a href="{pagination.prevPageUrl}" rel="prev">&#8592; Upcoming</a></div>{.end}
-    {.if pagination.nextPage}<div class="older"><a href="{pagination.nextPageUrl}" rel="next">Past Shows &#8594;</a></div>{.end}
-  </nav>
-  {.end}
 
 </div>
