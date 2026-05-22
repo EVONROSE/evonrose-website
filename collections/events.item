@@ -5,6 +5,12 @@
 
     <a href="{collection.fullUrl}" class="er-back-link">&#8592; All Shows</a>
 
+    {.main-image?}
+    <div class="er-event-item-image">
+      <img {@|image-meta} />
+    </div>
+    {.end}
+
     <h1 class="er-event-item-title">{title}</h1>
 
     <div class="er-event-item-meta">
@@ -24,8 +30,8 @@
     </div>
     {.end}
 
-    {.section websiteUrl}
-    <a href="{websiteUrl}" target="_blank" class="er-ticket-btn er-ticket-btn--large">Tickets sichern &#8594;</a>
+    {.section sourceUrl}
+    <a href="{sourceUrl}" target="_blank" class="er-ticket-btn er-ticket-btn--large">Tickets sichern &#8594;</a>
     {.end}
 
     {.section body}
