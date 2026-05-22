@@ -1,0 +1,46 @@
+<div class="er-event-item">
+  {.section item}
+
+  <div class="er-event-item-inner">
+
+    <a href="{collection.fullUrl}" class="er-back-link">&#8592; All Shows</a>
+
+    <h1 class="er-event-item-title">{title}</h1>
+
+    <div class="er-event-item-meta">
+      <span class="er-event-item-date">{startDate|date %d.%m.%Y}</span>
+      <span class="er-event-item-dot">·</span>
+      <span class="er-event-item-time">{startDate|date %H:%M} Uhr</span>
+    </div>
+
+    {.section location}
+    <div class="er-event-item-location">
+      {.if addressTitle}<div class="er-event-item-venue">{addressTitle}</div>{.end}
+      {.if addressLine1}
+      <div class="er-event-item-address">
+        {addressLine1}{.if addressLine2}, {addressLine2}{.end}
+      </div>
+      {.end}
+    </div>
+    {.end}
+
+    {.section websiteUrl}
+    <a href="{websiteUrl}" target="_blank" class="er-ticket-btn er-ticket-btn--large">Tickets sichern &#8594;</a>
+    {.end}
+
+    {.section body}
+    <div class="er-event-item-body">{@}</div>
+    {.end}
+
+  </div>
+
+  {.end}
+
+  {.if pagination}
+  <nav class="er-event-nav">
+    {.if pagination.prevItem}<a href="{pagination.prevItem.fullUrl}" class="er-event-nav-link">&#8592; {pagination.prevItem.title}</a>{.end}
+    {.if pagination.nextItem}<a href="{pagination.nextItem.fullUrl}" class="er-event-nav-link er-event-nav-link--next">{pagination.nextItem.title} &#8594;</a>{.end}
+  </nav>
+  {.end}
+
+</div>
