@@ -2,7 +2,11 @@
 
   <div class="er-events-table">
     {.repeated section upcoming}
-    <div class="er-event-row" id="event-{id}">
+    {.section sourceUrl}
+    <a href="{sourceUrl}" target="_blank" class="er-event-row" id="event-{id}">
+    {.or}
+    <div class="er-event-row er-event-row--no-link" id="event-{id}">
+    {.end}
 
       <div class="er-event-date">
         <span class="er-date-day">{startDate|date %d.%m.}</span>
@@ -15,13 +19,17 @@
 
       <div class="er-event-action">
         {.section sourceUrl}
-        <a href="{sourceUrl}" target="_blank" class="er-ticket-btn">Tickets &#8594;</a>
+        <span class="er-ticket-btn">Tickets &#8594;</span>
         {.or}
-        <a href="{fullUrl}" class="er-ticket-btn er-ticket-btn--info">Info &#8594;</a>
+        <span class="er-ticket-btn er-ticket-btn--info">Info &#8594;</span>
         {.end}
       </div>
 
+    {.section sourceUrl}
+    </a>
+    {.or}
     </div>
+    {.end}
     {.end}
   </div>
 
