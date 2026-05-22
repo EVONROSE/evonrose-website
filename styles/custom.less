@@ -41,14 +41,74 @@
   line-height: 1.75;
 }
 
-/* ---- NEWSLETTER: Tighter, cleaner ---- */
+/* ---- NEWSLETTER ---- */
 .newsletter-block .newsletter-form-wrapper {
   max-width: 540px;
   margin: 0 auto;
+  padding: 40px 36px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 2px;
 }
 
 .newsletter-block .newsletter-form-header-title {
-  letter-spacing: 1.5px;
+  font-family: "Raleway", Arial, sans-serif !important;
+  font-size: 14px !important;
+  letter-spacing: 3px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #ffffff !important;
+  margin-bottom: 8px !important;
+}
+
+.newsletter-block .newsletter-form-header-description p {
+  font-family: "Raleway", Arial, sans-serif !important;
+  font-size: 14px !important;
+  color: rgba(255, 255, 255, 0.50) !important;
+  letter-spacing: 0.5px;
+  margin-bottom: 24px !important;
+}
+
+/* Email input: dark, no white box */
+.newsletter-block .newsletter-form-field-wrapper,
+.newsletter-block .newsletter-form-field-element,
+.newsletter-block input[type="email"],
+.newsletter-block input[type="text"] {
+  background-color: rgba(255, 255, 255, 0.07) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 2px !important;
+  color: #ffffff !important;
+  font-family: "Raleway", Arial, sans-serif !important;
+  font-size: 13px !important;
+  letter-spacing: 1px !important;
+}
+
+.newsletter-block input[type="email"]::placeholder,
+.newsletter-block input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.newsletter-block input[type="email"]:focus,
+.newsletter-block input[type="text"]:focus {
+  border-color: rgba(232, 78, 53, 0.60) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Submit button */
+.newsletter-block .newsletter-form-button,
+.newsletter-block .sqs-editable-button {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  font-family: "Raleway", Arial, sans-serif !important;
+}
+
+.newsletter-block .newsletter-form-footnote p {
+  font-family: "Raleway", Arial, sans-serif !important;
+  font-size: 11px !important;
+  color: rgba(255, 255, 255, 0.28) !important;
+  letter-spacing: 0.5px;
+  margin-top: 12px !important;
 }
 
 /* ---- BUTTONS: Tighter letter-spacing, consistent size ---- */
@@ -57,12 +117,6 @@
 .sqs-block-button-element--small {
   letter-spacing: 2px !important;
   font-size: 13px !important;
-}
-
-/* Newsletter button stays smaller */
-.newsletter-block .newsletter-form-button,
-.newsletter-block .sqs-editable-button {
-  font-size: 11px !important;
 }
 
 /* ---- PAGE TITLE: Hide default h1 on pages where not needed ---- */
@@ -80,6 +134,10 @@
 @media only screen and (max-width: 640px) {
   .sqs-block-spacer {
     max-height: 30px !important;
+  }
+
+  .newsletter-block .newsletter-form-wrapper {
+    padding: 28px 20px;
   }
 }
 
