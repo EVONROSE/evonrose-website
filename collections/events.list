@@ -14,8 +14,8 @@
       </div>
 
       <div class="er-event-action">
-        {.section websiteUrl}
-        <a href="{websiteUrl}" target="_blank" class="er-ticket-btn">Tickets &#8594;</a>
+        {.section sourceUrl}
+        <a href="{sourceUrl}" target="_blank" class="er-ticket-btn">Tickets &#8594;</a>
         {.or}
         <a href="{fullUrl}" class="er-ticket-btn er-ticket-btn--info">Info &#8594;</a>
         {.end}
