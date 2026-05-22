@@ -11,9 +11,6 @@
 
       <div class="er-event-meta">
         <span class="er-event-title">{title}</span>
-        {.section location}
-        {.if addressTitle}<span class="er-event-venue">{addressTitle}</span>{.end}
-        {.end}
       </div>
 
       <div class="er-event-action">
