@@ -309,3 +309,71 @@
     margin-left: 0;
   }
 }
+
+
+/* =========================================
+   EVON ROSE — Tour-Partner-Leiste (Live-Seite)
+   ========================================= */
+
+.er-partners {
+  max-width: 860px;
+  margin: 46px auto 0;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+}
+
+.er-partners-label {
+  display: block;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.38);
+  margin-bottom: 22px;
+}
+
+.er-partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.er-partner-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px 22px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.er-partner-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+}
+
+.er-partner-chip img {
+  display: block;
+  height: 26px;
+  width: auto;
+}
+
+@media only screen and (max-width: 640px) {
+  .er-partners {
+    margin-top: 34px;
+    padding-top: 30px;
+  }
+
+  .er-partner-chip {
+    padding: 10px 16px;
+  }
+
+  .er-partner-chip img {
+    height: 22px;
+  }
+}
